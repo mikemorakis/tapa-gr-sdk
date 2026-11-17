@@ -1,0 +1,51 @@
+{
+  "name": "tapa-gr",
+  "version": "0.1.0",
+  "description": "Small TypeScript client for the free, no-auth public read API of tapa.gr (page search, page Markdown, pricing, contact) plus the MCP endpoint URL.",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "sideEffects": false,
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "prepare": "npm run build",
+    "test": "npm run build && node --test test/*.test.mjs",
+    "prepublishOnly": "npm test"
+  },
+  "keywords": [
+    "tapa.gr",
+    "api",
+    "openapi",
+    "mcp",
+    "ai-agents",
+    "greece",
+    "web-design"
+  ],
+  "homepage": "https://tapa.gr/developers/",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mikemorakis/tapa-gr-sdk.git"
+  },
+  "bugs": {
+    "url": "https://github.com/mikemorakis/tapa-gr-sdk/issues"
+  },
+  "author": "tapa.gr <hello@tapa.gr> (https://tapa.gr/)",
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "^5.6.0"
+  }
+}
