@@ -10,11 +10,11 @@ Read endpoints are free and need no key, account or authentication. Limit: 60 re
 
 ## Install
 
-Not on npm yet. Install from GitHub:
-
 ```sh
-npm install github:mikemorakis/tapa-gr-sdk
+npm install tapa-gr
 ```
+
+npm: <https://www.npmjs.com/package/tapa-gr> · Source: <https://github.com/mikemorakis/tapa-gr-sdk>
 
 Requires Node 18+ (or any runtime with `fetch`).
 
